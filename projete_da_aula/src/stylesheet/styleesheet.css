@@ -1,0 +1,37 @@
+/* home.css */
+
+.home-page {
+    /* Add some basic styling to the home page */
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .home-page h1 {
+    /* Style the heading */
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .product-list {
+    /* Style the product list component */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .product-list li {
+    /* Style each product item */
+    margin-bottom: 20px;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .product-list li:last-child {
+    /* Remove border from the last item */
+    border-bottom: none;
+  }
