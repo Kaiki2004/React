@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+  
+  .product-list {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .product-list h1 {
+    margin-top: 0;
+  }
+  
+  .product-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .product-list li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .product-list li:last-child {
+    border-bottom: none;
+  }
+  
+  .product-list li:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .product-list a {
+    text-decoration: none;
+    color: #337ab7;
+  }
+  
+  .product-list a:hover {
+    color: #23527c;
+  }
+  
+  .product-list button {
+    background-color: #337ab7;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .product-list button:hover {
+    background-color: #23527c;
+  }
+  
+  .add-filme-btn {
+    margin-bottom: 20px;
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background-color: #337ab7;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .add-filme-btn:hover {
+    background-color: #23527c;
+  }
