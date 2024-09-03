@@ -1,37 +1,96 @@
-/* home.css */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
 
-.home-page {
-    /* Add some basic styling to the home page */
-    max-width: 800px;
-    margin: 40px auto;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .home-page h1 {
-    /* Style the heading */
-    color: #333;
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-  
-  .product-list {
-    /* Style the product list component */
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .product-list li {
-    /* Style each product item */
-    margin-bottom: 20px;
-    padding: 10px;
-    border-bottom: 1px solid #ccc;
-  }
-  
-  .product-list li:last-child {
-    /* Remove border from the last item */
-    border-bottom: none;
-  }
+.container {
+  width: 100%;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  padding: 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+.product-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.product-info div {
+  margin-bottom: 10px;
+}
+
+.product-name {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.product-description {
+  color: #666;
+  font-size: 14px;
+}
+
+.product-actions {
+  margin-top: 20px;
+  text-align: right;
+}
+
+button {
+  background-color: #4CAF50;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #3e8e41;
+}
+
+.edit-link {
+  color: #337ab7;
+  text-decoration: none;
+}
+
+.edit-link:hover {
+  color: #23527c;
+}
+
+.link-button {
+  background-color: #4CAF50; /* Green */
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.link-button:hover {
+  background-color: #3e8e41; /* Darker green on hover */
+}

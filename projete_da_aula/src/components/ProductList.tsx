@@ -25,13 +25,18 @@ function ProductList() {
     };
     return (
         <div>
-            <h1> Filmes</h1>
-            <Link to="/add">Add Filme</Link>
+            <br />
+            <Link to="/add" className="link-button">Adicionar filmes</Link>
             <ul>
                 {products.map((product) => (
                     <li key={product.id}>
-                        {product.name} - {product.genero} - {product.classificacao} - {product.diretor} units
-                        <Link to={`/edit/${product.id}`}>Edit</Link>
+                        <br />
+                        <div>
+                            Nome: {product.name} <br /> Genero: {product.genero} <br />Classificação: {product.classificacao} <br />Diretor: {product.diretor}
+                        </div>
+                        <br />
+                        <Link to={`/edit/${product.id}`}>Editar</Link>
+                        <br />
                         <button onClick={() => handleDelete(product.id)}>Delete</button>
                     </li>
                 ))}
