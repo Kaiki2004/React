@@ -1,0 +1,11 @@
+{
+  "products": [
+    {
+      "id": "2f4b",
+      "name": "Star Wars",
+      "description": "Muy bao",
+      "calssificacao": "12+",
+      "diretor": "unknown"
+    }
+  ]
+}
