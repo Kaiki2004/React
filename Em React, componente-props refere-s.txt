@@ -1,0 +1,63 @@
+Em React, "componente-props" refere-se às propriedades que você passa para um componente. "Props" é uma abreviação de "properties" (propriedades). Elas são usadas para passar dados e comportamentos de um componente pai para um componente filho. As props são imutáveis e ajudam a configurar como um componente deve se comportar ou como ele deve ser renderizado.
+
+// Componente Filho
+function Saudaçao(props) {
+  return <h1>Olá, {props.nome}!</h1>;
+}
+
+// Componente Pai
+function App() {
+  return <Saudaçao nome="Maria" />;
+}
+
+No exemplo acima:
+
+O componente Saudaçao é um componente filho que espera uma prop chamada nome.
+O componente App é o componente pai que passa a prop nome com o valor "Maria" para o componente Saudaçao.
+Assim, quando o componente Saudaçao é renderizado, ele exibe "Olá, Maria!".
+
+Características das Props
+Imutabilidade: As props são somente leitura e não podem ser alteradas pelo componente que as recebe. Se você precisar alterar dados, geralmente usará o estado (state) em vez das props.
+
+Configuração do Componente: Props permitem que você configure o comportamento e a aparência dos componentes de forma flexível, tornando-os reutilizáveis.
+
+PropTypes e DefaultProps: React fornece ferramentas para validar o tipo das props que um componente deve receber (PropTypes) e para definir valores padrão para as props (defaultProps).
+
+Exemplo com PropTypes e defaultProps:
+
+jsx
+Copiar código
+import PropTypes from 'prop-types';
+
+// Componente Filho com validação de props e valores padrão
+function Saudaçao(props) {
+  return <h1>Olá, {props.nome}!</h1>;
+}
+
+Saudaçao.propTypes = {
+  nome: PropTypes.string
+};
+
+Saudaçao.defaultProps = {
+  nome: 'Visitante'
+};
+
+// Componente Pai
+function App() {
+  return <Saudaçao />;
+}
+Nesse exemplo, se o componente Saudaçao for usado sem uma prop nome, ele exibirá "Olá, Visitante!" devido ao valor padrão definido em defaultProps.
+
+Usando props corretamente permite criar componentes modulares e reutilizáveis em suas aplicações React.
+
+
+------------------------------------------------------------------
+A função handleInputChange geralmente é usada para lidar com eventos de mudança em campos de entrada de formulários em React. Ela é chamada sempre que o valor de um campo de entrada (como um input, textarea, ou select) muda, permitindo que você atualize o estado do componente de acordo com o novo valor.
+
+O useEffect é um Hook do React que permite realizar efeitos colaterais em componentes funcionais. Efeitos colaterais podem incluir operações como chamadas a APIs, manipulação direta do DOM, configuração de assinaturas de eventos, e mais. Antes da introdução dos Hooks, esses tipos de operações eram realizados em componentes de classe usando métodos do ciclo de vida, como componentDidMount e componentDidUpdate.
+
+
+No React, um "Hook" é uma função especial que permite "ligar" o estado e outras funcionalidades do React a componentes funcionais. Hooks foram introduzidos no React 16.8 para permitir que você use recursos como estado e efeitos colaterais em componentes funcionais, algo que antes só era possível em componentes de classe.
+
+
+
